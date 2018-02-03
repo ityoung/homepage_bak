@@ -1,10 +1,10 @@
 # Site settings
 title: ityoung Blog
-SEOTitle: ityoung的博客 | ityoung Blog
+SEOTitle: 严北的博客 | ityoung Blog
 header-img: img/home-bg.jpg
-email: ityoung@gmail.com
-description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+email: ityoung@.com
+description: "关于测试开发、Python与个人成长 | 严北，Software Engineer in Test | 这里是 @ityoung 严北的个人博客，与你一起发现更大的世界。"
+keyword: "ityoung, 严北, 小北kkkk, 博客, 个人网站, 互联网, Python， 测试开发, 测试"
 url: "https://ityoung.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+disqus_username: ityoung
 
 # Netease setttings
 netease_comment: false
@@ -61,13 +61,13 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: ityoung.github.io
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "终身学习"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
