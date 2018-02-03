@@ -9,14 +9,8 @@ multilingual: false
 tags:
     - Python
     - 测试开发
-    - unittest
-    - corotine
     - 协程
 ---
-
-未经许可请勿转载！不允许任何网站擅自盗用！
-文章地址：http://www.cnblogs.com/ityoung/p/8406300.html
-
 
 ## 背景
 
@@ -40,8 +34,6 @@ tags:
 
 1. 使用协程，可能需要修改PyUnit源码
 2. 使用协程，可能需要修改当前测试用例为协程方法，改动可能很大
-
-文章地址：http://www.cnblogs.com/ityoung/p/8406300.html
 
 ## 实现过程
 
@@ -68,8 +60,6 @@ unittest源码在`Lib/unittest`中。
 上层调用在TestSuite类中，修改上层入口，把对TestCase的顺序执行改为调用协程并发执行：
 
 ![提取循环部分代码，改写为协程](http://images2017.cnblogs.com/blog/698110/201802/698110-20180202182953671-1131006176.png)
-
-文章地址：http://www.cnblogs.com/ityoung/p/8406300.html
 
 ## 最终结果
 
