@@ -85,7 +85,7 @@ service-worker: true
 
 
 # Friends
-学习链接: [
+links: [
     {
     #     title: "Su",
     #     href: "http://su.gallery/"
