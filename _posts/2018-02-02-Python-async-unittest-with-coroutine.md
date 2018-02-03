@@ -5,7 +5,7 @@ date:         2018-02-02 18:32:00
 author:       "严北"
 header-mask:  0.3
 catalog:      true
-multilingual: true
+multilingual: 
 tags:
     - Python
     - 测试开发
