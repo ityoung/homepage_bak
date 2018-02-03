@@ -1,13 +1,29 @@
+---
+layout:       post
+title:        "Python - 用协程并发执行测试用例"
+date:         2018-02-02 18:32:00
+author:       "严北"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python
+    - 测试开发
+    - unittest
+    - corotine
+    - 协程
+---
+
 未经许可请勿转载！不允许任何网站擅自盗用！
 文章地址：http://www.cnblogs.com/ityoung/p/8406300.html
 
-#背景:
+# 背景:
 
 最近在工作中，遇到需要执行大量测试用例的情况。大概2500个测试用例，每个用例有数条HTTP请求以及一些特殊处理，线性执行下来的结果是我花了2个半小时才执行完成！
 
 为了解决这个问题，提高工作效率，实现测试用例并发执行是我所需要的。
 
-#几个想法:
+# 几个想法:
 
 1. 多线程执行测试用例
 
