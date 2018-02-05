@@ -1,10 +1,10 @@
 # Site settings
-title: 严北的博客
-SEOTitle: 严北的博客 | ityoung's Blog
+title: Shin's Blog
+SEOTitle: Shin's Blog | ityoung's Blog
 header-img: img/home-bg.jpg
 email: ityoung@foxmail.com
 description: "关于测试开发、Python与个人成长 | 严北，Software Engineer in Test | 这里是 @ityoung 严北的个人博客，与你一起发现更大的世界。"
-keyword: "ityoung, 严北, 小北kkkk, 博客, 个人网站, 互联网, Python， 测试开发, 测试"
+keyword: "Shin Yeung, ityoung, 严北, 小北kkkk, 博客, 个人网站, 互联网, Python， 测试开发, 测试"
 url: "https://ityoung.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
