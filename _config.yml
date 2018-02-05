@@ -87,9 +87,6 @@ service-worker: true
 # Links
 links: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
         title: "Python官网",
         href: "https://www.python.org/"
     },{
