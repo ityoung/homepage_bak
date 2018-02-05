@@ -6,6 +6,7 @@ author:       "严北"
 header-mask:  0.3
 catalog:      true
 multilingual: false
+header-img: ""
 tags:
     - Python
     - 测试开发
