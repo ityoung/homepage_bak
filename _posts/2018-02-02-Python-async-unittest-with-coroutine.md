@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        Python - 用协程并发执行测试用例
+title:        Python - 用协程并发执行测试用例
 date:         2018-02-02 18:32:00
 author:       严北
 header-mask:  0.3
