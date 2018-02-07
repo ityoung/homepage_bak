@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Python - 用协程并行执行测试用例"
+title:        "Python - 用协程并发执行测试用例"
 date:         2018-02-02 18:32:00
 author:       "严北"
 header-mask:  0.3
@@ -48,29 +48,37 @@ unittest源码在`Lib/unittest`中。
 
 给已有的测试用例打断点，调试几波，理清unittest模块对测试用例的调用执行顺序。
 
-猜测整体过程为：
+猜测主要过程为：
 
-《此处应有图》
+![原实现流程](/img/in-post/article-fastunit/origin-process.png)
 
 找到TestCase真正执行入口：
 
 `unittest/case.py` 中的 `TestCase` 类中的 `run` 方法的 `testMethod()`。（Line 605）
 
-![测试用例执行入口](http://images2017.cnblogs.com/blog/698110/201802/698110-20180202182726453-54980310.png)
+![测试用例执行入口](/img/in-post/article-fastunit/entry.png)
 
 上层调用在TestSuite类中，修改上层入口，把对TestCase的顺序执行改为调用协程并发执行：
 
-![提取循环部分代码，改写为协程](http://images2017.cnblogs.com/blog/698110/201802/698110-20180202182953671-1131006176.png)
+![提取循环部分代码，改写为协程](/img/in-post/article-fastunit/code-changes.png)
 
 ## 最终结果
 
+修改后，执行流程如下：
+
+![现在实现流程](/img/in-post/article-fastunit/now-process.png)
+
 经过上述修改，原来2600多个测试用例需要的执行时间，从两个半小时压缩到8分半钟（如图），提高效率不赘述。
 
-![测试报告](http://images2017.cnblogs.com/blog/698110/201802/698110-20180202181205953-2040263898.png)
+![测试报告](/img/in-post/article-fastunit/test-report.png)
 
 ## 存在的问题
 
-测试报告的Log获取不准确，应该是IO处理速度不足导致，后续需要想办法解决。（又有事做了:P）
+-测试报告的Log获取不准确，应该是IO处理速度不足导致，后续需要想办法解决。（又有事做了:P）-
+
+已解决上述问题，原因在于使用HTMLTestRunner时，输出流代码未生效，导致原先重定向至stderr的结果被写入测试报告。在添加一秒钟睡眠时间后解决。（代码一行，debug一天，哭）
+
+![修复报告问题](/img/in-post/article-fastunit/fix-HTMLTestRunner-error.png)
 
 ## Github
 
