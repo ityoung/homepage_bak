@@ -95,5 +95,8 @@ links: [
     },{
         title: "TesterHome",
         href: "https://testerhome.com/"
+    },{
+        title: "python3-fastunit",
+        href: "https://github.com/ityoung/python3-fastunit"
     }
 ]
