@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        tornado SSL 证书获取与服务器配置
+title:        tornado SSL 证书获取与服务器配置
 date:         2018-01-16 13:12:00
 author:       严北
 header-mask:  0.3
@@ -121,4 +121,5 @@ requests.get(URL, **verify=False**)
 # 参考
 
 [1] [使用Tornado搭建HTTPS网站](http://www.yeolar.com/note/2015/04/30/tornado-ssl-https/), yeolar
+
 [2] [curl - 为什么不能识别自签名的SSL证书？](https://code.i-harness.com/zh-CN/q/10c8411)
